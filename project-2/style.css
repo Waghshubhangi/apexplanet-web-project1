@@ -1,1 +1,137 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e6f7ff; /* Light blue background with a bit more vibrancy */
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card {
+  background: #fff; /* White background for the form */
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background-color: #f9f9f9; /* Light grayish background for the card */
+}
+
+/* Subtle hover effect */
+.card:hover {
+  transform: translateY(-10px);
+}
+
+h2 {
+  text-align: center;
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #444;
+  font-size: 14px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #555;
+}
+
+form input[type="date"] {
+  padding: 12px;
+}
+
+form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff; /* Blue button */
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+#formMessage {
+  text-align: center;
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* To-Do List Styles */
+#todoList {
+  list-style: none;
+  margin-top: 20px;
+}
+
+#todoList li {
+  background: #f1f1f1; /* Light gray for the to-do items */
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#todoList li:hover {
+  background: #f4f4f4; /* Slightly darker gray on hover */
+}
+
+#todoList li button {
+  background: #007bff; /* Blue button for tasks */
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+#todoList li button:hover {
+  background: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+
 
